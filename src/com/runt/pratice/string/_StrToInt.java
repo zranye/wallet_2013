@@ -7,12 +7,21 @@ public class _StrToInt {
 	 */
 	public static void main(String[] args) {
 		System.out.println(strToInt("+ 00001234"));
-//		System.out.println((int)'a');
-//		System.out.println((int)'1');
-//		System.out.println((int)'0');
-//		System.out.println((int)' ');
 	}
 	
+	/**
+	 * 字符串转换成数字
+	 * 
+	 * "" => 0
+	 * "12ab" => 12
+	 * "  12d " => 12
+	 * "  ba12" => 0
+	 * 
+	 * @param str
+	 * @return
+	 * 
+	 * @author yeziran Jun 21, 2013
+	 */
 	public static int strToInt(String str){
 		int result = 0;//返回的目标数字
 		String srcStr = str.trim();//去左右空格
